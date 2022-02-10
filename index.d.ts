@@ -2938,8 +2938,9 @@ declare namespace Eris {
     user?: User;
     acknowledge(flags?: number): Promise<void>;
     createFollowup(content: string | InteractionContent, file?: FileContent | FileContent[]): Promise<Message>;
-    createModal(content: string | InteractionContent , file?: FileContent | FileContent[]): Promise<void>;
     createMessage(content: string | InteractionContent , file?: FileContent | FileContent[]): Promise<void>;
+    createModal(content: string | InteractionContent , file?: FileContent | FileContent[]): Promise<void>;
+
     defer(flags?: number): Promise<void>;
     deleteMessage(messageID: string): Promise<void>;
     deleteOriginalMessage(): Promise<void>;
@@ -2974,8 +2975,9 @@ declare namespace Eris {
     user?: User;
     acknowledge(): Promise<void>;
     createFollowup(content: string | InteractionContent, file?: FileContent | FileContent[]): Promise<Message>;
-    createModal(content: string | InteractionContent , file?: FileContent | FileContent[]): Promise<void>;
     createMessage(content: string | InteractionContent, file?: FileContent | FileContent[]): Promise<void>;
+    createModal(content: string | InteractionContent , file?: FileContent | FileContent[]): Promise<void>;
+
     defer(flags?: number): Promise<void>;
     deferUpdate(): Promise<void>;
     deleteMessage(messageID: string): Promise<void>;
