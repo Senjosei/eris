@@ -3002,9 +3002,13 @@ declare namespace Eris {
     result(choices: ApplicationCommandOptionChoice[]): Promise<void>;
   }
 
+  interface ModalSubmitInteractionDataComponents {
+    components: TextInput[];
+    type: Constants["ComponentTypes"]["ACTION_ROW"];
+  }
   interface ModalSubmitInteractionData {
     custom_id: string;
-    components: ActionRow[];
+    components: ModalSubmitInteractionDataComponents[];
   }
 
   export class ModalSubmitInteraction<T extends PossiblyUncachedTextable = TextableChannel> extends Interaction {
