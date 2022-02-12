@@ -2903,7 +2903,7 @@ declare namespace Eris {
   }
 
   //Interaction
-  type AnyInteraction = PingInteraction | CommandInteraction | ComponentInteraction | AutocompleteInteraction;
+  type AnyInteraction = PingInteraction | CommandInteraction | ComponentInteraction | AutocompleteInteraction | ModalSubmitInteraction;
 
   export class Interaction extends Base {
     acknowledged: boolean;
